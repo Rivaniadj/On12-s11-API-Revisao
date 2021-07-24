@@ -1,4 +1,4 @@
-let filterById = (model, id) => {
+let findById = (model, id) => {
     let filteredData = model.find((travel) => {
         return travel.id == id
     });
@@ -7,5 +7,5 @@ let filterById = (model, id) => {
 
 
 module.exports = {
-    filterById
+    findById
 };

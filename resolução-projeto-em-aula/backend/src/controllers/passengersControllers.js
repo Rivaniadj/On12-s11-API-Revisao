@@ -20,7 +20,7 @@ const createPassenger = (req, res) => {
         "id": Math.random().toString(32).substr(2),
         name,
         email,
-        documentNumber,
+        documentNumber,                     
         travelId: requiredId
     }
 
@@ -56,7 +56,7 @@ const replacePassenger = (req, res) => {
     const {
         name,
         email,
-        documentNumber
+        documentNumber,
     } = req.body;
 
     // let passenger = passengers.find(p => p.id == requiredId);
@@ -151,4 +151,5 @@ module.exports = {
     replacePassenger,
     updateName,
     deletePassenger
+    
 };
